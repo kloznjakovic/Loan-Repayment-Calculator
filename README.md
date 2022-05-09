@@ -42,20 +42,19 @@ Next, it will ask for monthly payment amount you are willing/planning to spend p
 Otherwise, code then calculates minimum monthly payment, months, and years to pay off your loans.
 
 Example Output:
+Number of years: 4
 
-Number of years:4
+loan_per_year: 13000
 
-loan_per_year:13000
-
-interest_rate:0.05
+interest_rate: 0.05
 total owed at graduation
 $ 58833
 
-monthly payment:400
+monthly payment: 400
 A monthly payment of $ 400.0 will work.
 The minimum monthly payment for this loan would be $245
-it will take 227 months to pay off your student loans.
-it will take 18.92 years to pay off your student loans.
+It will take 227 months to pay off your student loans.
+It will take 18.92 years to pay off your student loans.
 
 
 ## Project Status
