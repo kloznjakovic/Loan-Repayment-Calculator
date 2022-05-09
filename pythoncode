@@ -1,0 +1,33 @@
+years = int(input("Number of years:"))
+loan_per_year = float(input("loan_per_year:"))
+interest_rate = float(input("interest_rate:"))
+total_owed = 0
+counter = 0 
+
+while (counter<years):
+    total_int = (loan_per_year + total_owed) * interest_rate
+    total_owed = total_owed + total_int + loan_per_year
+    counter += 1
+           
+print("total owed at graduation")
+print("$",str(int(total_owed)))
+         
+monthly_payment = float(input("monthly payment:" ))
+monthly_int_rate = interest_rate/12
+minimum_monthly_payment = total_owed *monthly_int_rate
+
+if (monthly_payment>= minimum_monthly_payment):
+    print("A monthly payment of $", str(monthly_payment), "will work.")
+    print("The minimum monthly payment for this loan would be $"+ str(int(minimum_monthly_payment)))
+else:
+    print("A monthly payment of $", str(monthly_payment), "won't work.")
+    print("The minimum monthly payment for this loan would be $"+ str(int(minimum_monthly_payment)))
+    
+months = 0
+while (total_owed > 0):
+    months +=1
+    total_owed = total_owed - monthly_payment
+    total_owed = total_owed + (total_owed *monthly_int_rate)
+
+print("it will take", str(months), "months to pay off your student loans.")
+print("it will take", str(months/12), "years to pay off your student loans.")
